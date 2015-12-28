@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <title>UI Test</title>
+      <link rel="stylesheet" type="text/css" href="test.css">
+   <body>
+   	<h3>Column Master</h3>
+      <a class="button" href="#popup1">Add Column</a>
+      <div id="popup1" class="overlay">
+         <div class="popup">
+            <h2>Add Column Here</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content1">
+               <form>
+                  Column name: <input type="text" name="columnName"><br>
+                  Column Type: 
+                  <select>
+                     <option>Number</option>
+                     <option>String</option>
+                     <option>Boolean</option>
+                  </select>
+                  <br>
+                  Editable:
+                  <select>
+                     <option>Yes</option>
+                     <option>No</option>
+                  </select>
+                  <br>
+                  <button onclick="myFunction()">Add Column</button><button>Close without Adding</button><br>
+               </form>
+            </div>
+         </div>
+      </div>
+      <button>Remove column</button>
+      <table id="myTable">
+         <th></th>
+         <th>Column Name</th>
+         <th>Column type</th>
+         <th>Editable</th>
+         <tr>
+            <td><input type="checkbox" name="check1"></td>
+            <td>Column1</td>
+            <td>String</td>
+            <td>yes</td>
+         </tr>
+      </table>
+      <script type="text/javascript" src="test.js"></script>
+   </body>
+</html>
